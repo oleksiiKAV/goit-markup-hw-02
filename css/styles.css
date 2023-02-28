@@ -1,0 +1,169 @@
+:root {
+  /* h1-h3 navigation buttons*/
+  --text-header-color: #2E2F42;
+  /* p and href */
+  --text-color: #434455;
+  --text-hover-color: #404BBF;
+  --font-size: 16px;
+  --font-weight-main: 400;
+}
+
+body {
+  /* «С7» Для элемента <body> задано свойство font-family с доминантным на макете шрифтом Roboto. */
+  /* Body */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  /* identical to box height, or 150% */
+
+  background-color: #E5E5E5;
+  padding: 40px;
+  position: relative;
+  width: 1440px;
+  height: 2590px;
+
+  background: #FFFFFF;
+  /* содержимое страницы сдвигаем относительно всех сторон */
+}
+
+/* убираем обертку списка */
+.list {
+  list-style: none
+}
+
+/* убираем обертку ссылок */
+.link {
+  text-decoration: none;
+}
+
+.nav-item {
+  font-weight: 500;
+  color: var(--text-header-color);
+}
+
+.nav-item:focus,
+.nav-item:hover {
+  font-weight: 500;
+  border: none;
+  color: var(--text-hover-color);
+}
+
+.contacts-email,
+.contacts-phone {
+  border: none;
+  color: var(--text-color);
+}
+
+.contacts-email:focus,
+.contacts-email:hover,
+.contacts-phone:focus,
+.contacts-phone:hover {
+  border: none;
+  color: var(--text-hover-color);
+}
+
+.navigation {
+  /* Menu Nav */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.hero {
+  /* NAVY BLUE */
+  background: var(--text-header-color);
+}
+
+.h1 {
+  /* Header 1 */
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 0.93;
+  /* or 107% */
+  text-align: center;
+  letter-spacing: 1.07;
+  color: #FFFFFF;
+}
+
+.h2-sections {
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+  color: var(--text-header-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* h3 */
+.team-memeber,
+.card-header,
+.feature {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-header-color);
+}
+
+.btn {
+  background: #4D5AE5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--text-hover-color);
+}
+
+.footer {
+  background: var(--text-header-color);
+}
+
+.footer-logo {
+  color: #F4F4FD;
+}
+
+.footer-text {
+  color: #E7E9FC;
+}
+
+/* *****************
+Portfolio
+**************** */
+.filter-btn {
+  color: #4D5AE5;
+  cursor: pointer;
+  background: #F4F4FD;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.filter-btn:active,
+.filter-btn:focus {
+  transition: background 0s;
+  color: #FFFFFF;
+  background: #404BBF;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
