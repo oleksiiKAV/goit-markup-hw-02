@@ -2,31 +2,30 @@
   /* h1-h3 navigation buttons*/
   --text-header-color: #2E2F42;
   /* p and href */
+  --logo-web: #4d5ae5;
   --text-color: #434455;
   --text-hover-color: #404BBF;
   --font-size: 16px;
   --font-weight-main: 400;
+  --WHITE: #FFFFFF;
+  --btn-background: #4D5AE5;
+  --btn-hover: #404BBF;
+  --fltr-text-color: #4D5AE5;
+  --fltr-background: #F4F4FD;
+  --fltr-active: #404BBF;
+  --footer-logo-color: #F4F4FD;
+  --footer-text-color: #E7E9FC;
 }
 
 body {
-  /* «С7» Для элемента <body> задано свойство font-family с доминантным на макете шрифтом Roboto. */
-  /* Body */
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--text-color);
-  /* identical to box height, or 150% */
-
-  background-color: #E5E5E5;
   padding: 40px;
   position: relative;
   width: 1440px;
   height: 2590px;
+  background: var(--WHITE);
 
-  background: #FFFFFF;
-  /* содержимое страницы сдвигаем относительно всех сторон */
 }
 
 /* убираем обертку списка */
@@ -41,19 +40,24 @@ body {
 
 .nav-item {
   font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24/16);
   color: var(--text-header-color);
+}
+
+.logo-left {
+  color: var(--logo-web);
 }
 
 .nav-item:focus,
 .nav-item:hover {
-  font-weight: 500;
-  border: none;
   color: var(--text-hover-color);
 }
 
 .contacts-email,
 .contacts-phone {
-  border: none;
+  font-style: normal;
+  line-height: calc(24/16);
   color: var(--text-color);
 }
 
@@ -61,7 +65,6 @@ body {
 .contacts-email:hover,
 .contacts-phone:focus,
 .contacts-phone:hover {
-  border: none;
   color: var(--text-hover-color);
 }
 
@@ -80,7 +83,7 @@ body {
   background: var(--text-header-color);
 }
 
-.h1 {
+.main-header {
   /* Header 1 */
   font-weight: 700;
   font-size: 56px;
@@ -88,10 +91,10 @@ body {
   /* or 107% */
   text-align: center;
   letter-spacing: 1.07;
-  color: #FFFFFF;
+  color: var(--WHITE);
 }
 
-.h2-sections {
+.header-sections {
 
   font-weight: 700;
   font-size: 36px;
@@ -115,16 +118,19 @@ body {
 }
 
 .btn {
-  background: #4D5AE5;
+  background: var(--btn-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #FFFFFF;
+  color: var(--WHITE);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24/16);
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  background: var(--text-hover-color);
+  background: var(--btn-hover);
 }
 
 .footer {
@@ -132,20 +138,28 @@ body {
 }
 
 .footer-logo {
-  color: #F4F4FD;
+  color: var(--footer-logo-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21/18);
+
 }
 
 .footer-text {
-  color: #E7E9FC;
+  color: var(--footer-text-color);
+
 }
 
 /* *****************
 Portfolio
 **************** */
 .filter-btn {
-  color: #4D5AE5;
+  color: var(--fltr-text-color);
+  font-weight: 500;
+
+  line-height: calc(24/16);
   cursor: pointer;
-  background: #F4F4FD;
+  background: var(--fltr-background);
   border: 1px solid #E7E9FC;
   border-radius: 4px;
   /* Inside auto layout */
@@ -158,8 +172,8 @@ Portfolio
 .filter-btn:active,
 .filter-btn:focus {
   transition: background 0s;
-  color: #FFFFFF;
-  background: #404BBF;
+  color: var(--WHITE);
+  background: var(--fltr-active);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   /* Inside auto layout */
