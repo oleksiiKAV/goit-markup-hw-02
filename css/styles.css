@@ -20,10 +20,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
-  padding: 40px;
-  position: relative;
-  width: 1440px;
-  height: 2590px;
   background: var(--WHITE);
 
 }
@@ -43,6 +39,17 @@ body {
   font-size: 16px;
   line-height: calc(24/16);
   color: var(--text-header-color);
+}
+
+.logo {
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21/18);
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
 }
 
 .logo-left {
@@ -68,15 +75,14 @@ body {
   color: var(--text-hover-color);
 }
 
-.navigation {
-  /* Menu Nav */
-  /* Auto layout */
+/* .navigation {
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-}
+} */
 
 .hero {
   /* NAVY BLUE */
@@ -107,13 +113,15 @@ body {
 }
 
 /* h3 */
-.team-memeber,
+.team-member,
 .card-header,
 .feature {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  line-height: calc(24/20);
+  /* identical to box height, or 120% */
+
+  text-align: center;
   color: var(--text-header-color);
 }
 
@@ -122,6 +130,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--WHITE);
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24/16);
@@ -142,6 +151,9 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21/18);
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
 }
 
@@ -155,9 +167,15 @@ Portfolio
 **************** */
 .filter-btn {
   color: var(--fltr-text-color);
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-
+  font-size: 16px;
   line-height: calc(24/16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
   cursor: pointer;
   background: var(--fltr-background);
   border: 1px solid #E7E9FC;
